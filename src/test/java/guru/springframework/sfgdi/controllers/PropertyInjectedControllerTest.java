@@ -9,7 +9,7 @@ class PropertyInjectedControllerTest {
     PropertyInjectedController controller;
 
     @BeforeEach
-    void setUp () {
+    void setUp() {
         controller = new PropertyInjectedController();
 
         controller.greetingService = new ConstructorGreetingService();
@@ -17,7 +17,7 @@ class PropertyInjectedControllerTest {
 
     @Test
     void getGreeting() {
+
         System.out.println(controller.getGreeting());
     }
-
 }
